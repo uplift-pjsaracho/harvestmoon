@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header img {
+    width: 100%;
+    height:30vh;
+    border-radius: 15px;
+    border: 5px burlywood solid;
+}
+body {
+    background-color: burlywood;
+}
+.leftContainer {
+    float: left;
+    width: 48%;
+    margin: 5px;
+    padding: 5px;
+}
+.instruction {
+    border: 10px brown;
+    background-color: navajowhite;
+    margin: 2px;
+    padding: 10px;
+    font-family:monospace;
+    font-size: 15px;
+    border-style: double;
+}
+.recipeList {
+    background-color: navajowhite;
+    border: 8px peru;
+    border-style:ridge;
+    margin-top: 10px;
+    height: 60vh;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.unlockedRcp {
+    font-size: large;
+    padding: 10px;
+    margin: 10px;
+    color: brown
+}
+.rightContainer {
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;
+    width: 48%;
+}
+.itemList {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ingrStyle {
+    width: fit-content;
+    margin: 2px;
+    padding: 4px;
+    background-color: orange;
+    box-shadow: 3px 3px;
+    border: darkred 3px ;
+    border-radius: 20px;
+    border-style: double;
+}
+hr  {
+    border: 3px solid brown;
+}
+.cookBox {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.btn  {
+    overflow: hidden;
+    margin-left: 23%;
+    padding: 10px;
+    font-size: 30px;
+    font-family: fantasy;
+    color: brown;
+    background-color: orange;
+    box-shadow: 3px 3px;
+    border: darkred 3px ;
+    border-radius: 20px;
+    border-style: double;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.again  {
+    overflow: hidden;
+    margin-left: 23%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: fantasy;
+    color: brown;
+    background-color: orange;
+    box-shadow: 3px 3px;
+    border: darkred 3px ;
+    border-radius: 20px;
+    border-style: double;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.unlockDiv  {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 30vw;
+    height: 30vh;
+    background-color: chocolate;
+    border: brown 2px solid;
+    cursor: pointer;
+    cursor: pointer;
+    text-align: center;
+}
+.unlockDiv > div {
+    position: absolute;
+    top: 40%;
+    left: -5%;
+}
+#gameComplete {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: chocolate;
+  }
+#gameComplete > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+@media only screen and (min-width: 991px) {
+    header img {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .btn {
+        margin-left: 35%;
+    }
+}
